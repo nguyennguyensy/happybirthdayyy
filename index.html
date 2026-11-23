@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffd3df" />
+  <title>Happy Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="scene">
+    <div class="deco deco--flower" aria-hidden="true">🌸</div>
+    <div class="deco deco--popcorn" aria-hidden="true">🍿</div>
+    <div class="deco deco--camera" aria-hidden="true">🎬</div>
+    <div class="deco deco--korea" aria-hidden="true">🇰🇷</div>
+    <div class="deco deco--sparkle" aria-hidden="true">✨</div>
+    <div class="deco deco--bow" aria-hidden="true">🎀</div>
+
+    <section class="gift-stage" id="giftStage" aria-label="Hộp quà sinh nhật">
+      <p class="eyebrow">A little surprise for you</p>
+      <button class="gift" id="giftButton" type="button" aria-label="Mở hộp quà">
+        <span class="lid">
+          <span class="lid-bow">🎀</span>
+          <span class="lid-ribbon"></span>
+        </span>
+        <span class="box">
+          <span class="box-ribbon"></span>
+          <span class="box-shine"></span>
+        </span>
+      </button>
+      <p class="tap-hint"><span>☝🏻</span> I have something for you</p>
+    </section>
+
+    <section class="birthday-card" id="birthdayCard" aria-live="polite">
+      <div class="poster-frame">
+        <div class="card-stars" aria-hidden="true">✦　·　✦　·　✦</div>
+        <p class="small-title">TODAY IS YOUR DAY</p>
+        <h1>Happy<br><em>Birthday</em></h1>
+        <div class="message-box">
+          <span class="message" id="message"></span><span class="cursor" aria-hidden="true"></span>
+        </div>
+        <div class="card-footer">
+          <span>FOR MY LITTLE SISTER</span>
+          <span>♡</span>
+        </div>
+      </div>
+      <button class="replay" id="replayButton" type="button">Xem lại lời chúc</button>
+    </section>
+
+    <canvas id="confetti" aria-hidden="true"></canvas>
+
+    <audio id="birthdayMusic" src="assets/hpbd.mp3" loop preload="auto"></audio>
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Tắt nhạc" title="Tắt/bật nhạc">♫</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
