@@ -12,7 +12,8 @@ const wishes = [
   'Wish you beauty, health, a lot of laughters,',
   'and most importantly,',
   'A Happy Birthday',
-  'Your sweetest chapter is just beginning!'
+  'Your sweetest chapter is just beginning.',
+  'Live it at the fullest!'
 ];
 
 let typingTimer;
@@ -34,15 +35,15 @@ function typeWishes(index = 0) {
     if (charIndex < text.length) {
       messageElement.textContent += text.charAt(charIndex);
       charIndex += 1;
-      typingTimer = setTimeout(typeNext, 38);
+      typingTimer = setTimeout(typeNext, 55);
     } else if (index < wishes.length - 1) {
       transitionTimer = setTimeout(() => {
         messageElement.style.opacity = '0';
         transitionTimer = setTimeout(() => {
           messageElement.style.opacity = '1';
           typeWishes(index + 1);
-        }, 320);
-      }, 1400);
+        }, 420);
+      }, 1800);
     }
   }
 
